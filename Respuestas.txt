@@ -1,0 +1,7 @@
+¿Qué problemas se puede ver a simple vista?
+A simple vista se ve que hay un problema de concurrencia entre los 2 hilos al querer procesar una misma area de codigo.
+Cuando el procesador le quita la prioridad a un hilo, este aun guarda variables (ya que no termino su proceso), y estas variables son modificadas por el otro hilo lo cual genera conflicto.
+
+¿Qué nombre se le dá a esta falla que ocurre en el código que provoca que cada ejecución presente
+resultados diferentes?
+Se le llama Race Condition, basicamente porque hace alusion a que son 2 o mas procesos o hilos peleando por los recursos del sistema.
